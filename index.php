@@ -21,9 +21,8 @@ include "header.php";
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Esse Cara sou eu</h1>
-                    <p class="sobre">teste teste teste
-                    Tenho 24 anos, sou designer gráﬁco e desenvolvedor. Sinto uma verdadeira devoção por tudo que tem a ver com edição de imagem, design, seja gráﬁco ou de web, e desenvolvimento.Tenho 10 anos de experiência trabalhando como freelancer, e sou autodidata, o que me permitiu entender desde o conceito primordial das coisas que sei, até as mais tecnológicas formas de executá-las.
+                    <h1>Um pouco sobre eu</h1>
+                    <p class="sobre">Tenho 24 anos, sou designer gráﬁco e desenvolvedor. Sinto uma verdadeira devoção por tudo que tem a ver com edição de imagem, design, seja gráﬁco ou de web, e desenvolvimento.Tenho 10 anos de experiência trabalhando como freelancer, e sou autodidata, o que me permitiu entender desde o conceito primordial das coisas que sei, até as mais tecnológicas formas de executá-las.
                         
                     </p>
                 </div>
