@@ -1,3 +1,21 @@
+<?php
+
+    require_once 'restrito.php';
+
+    if (count($_POST) > 0){
+        $logado = logar($_POST['login'], $_POST['senha']);
+
+        if ($logado != true){
+            $msg_erro = "Login e/ou senha incorreto(s), Tente Novamente!";
+        }else {
+            header('Location: index.php');
+        }
+    }
+
+
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -8,7 +26,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    
 
     
     <!--[if lt IE 9]>
@@ -18,16 +38,16 @@
   </head>
   <body>
   <div class="container">
-  	<div class="col-sm-4 col-sm-offset-4">
-      <form class="form-signin">
+  	<div>
+      <form class="form-signin" action="login.php" method="post">
         <h3 class="form-signin-heading">LOGAR</h3>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Nome" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="senha" required>
+        <label for="usuario" class="sr-only">usuario</label>
+        <input type="text" id="usuario" class="form-control" placeholder="Usuario" name="login" required autofocus>
+        <label for="senha" class="sr-only">Senha</label>
+        <input type="password" id="senha" class="form-control" placeholder="senha" name="senha" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">LOGAR</button>
       </form>
-     </div>
+      </div> 
     </div> <!-- /container -->
 
 
