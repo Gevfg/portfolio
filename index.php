@@ -6,6 +6,7 @@ include "header.php";
   
 
 //apenas teste
+// Vou colocar mais um comentário aqui para verificar se está funcionando normalmente ou não.
     
     <header id="header">
         <div class="container">
