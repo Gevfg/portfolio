@@ -1,37 +1,23 @@
-<?php
-
-
-include "header.php";
-?>
-  
-
-//apenas teste
-// Vou colocar mais um comentário aqui para verificar se está funcionando normalmente ou não.
-    
-    <header id="header">
+	<?php include "header.php";?>
+  	<header id="header">
         <div class="container">
             <div class="row">
                 <div class="text-center img-responsive"></div>
             </div>
         </div>
     </header>
-
-    
-    <!-- TEste sobre Section -->
+	<!-- SOBRE-->
     <section id="sobre">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Um pouco sobre eu</h1>
                     <p class="sobre">Tenho 24 anos, sou designer gráﬁco e desenvolvedor. Sinto uma verdadeira devoção por tudo que tem a ver com edição de imagem, design, seja gráﬁco ou de web, e desenvolvimento.Tenho 10 anos de experiência trabalhando como freelancer, e sou autodidata, o que me permitiu entender desde o conceito primordial das coisas que sei, até as mais tecnológicas formas de executá-las.
-                        
                     </p>
                 </div>
             </div>
-
-            <div class="row" style="padding-top: 20px;">
+			<div class="row" style="padding-top: 20px;">
                 <div class="col-md-10 col-md-offset-1">
-                    
                     <div class="media"> <!-- mídia à esquerda -->
                         <div class="media-left">
                             <img class="episodio media-object" src="images/icon1.png" alt="">
@@ -41,8 +27,7 @@ include "header.php";
                             <p class="sobre">Foi a area de atuação que mais me indentifiquei, fiz varios projetos, como acompanhei varios casos, enquanto estava no mercado, busco estudar a todo instante para aperfeiçoar minhas técnicas, sei que ainda falta muito para ser exelente no que faço, porém tenho prazer em tentar ajudar as pessoas com o que sei fazer.</p>
                         </div>
                     </div>           
-                
-                    <div class="media"> <!-- mídia à esquerda -->
+                	<div class="media"> <!-- mídia à esquerda -->
                         <div class="media-left">
                             <img class="episodio media-object" src="images/icon2.png" alt="">
                         </div>
@@ -51,8 +36,7 @@ include "header.php";
                             <p class="sobre">Estou iniciando no ramo de desenvolvimento, mais especificamente Front-End, onde posso unir minhas habilidades de Design, com a programação, estou trabalhando em alguns projetos voltados para a area de educação/criançãs, estou animado pretendo trilhar um grande caminho.</p>
                         </div>
                     </div>
-
-                    <div class="media"> <!-- mídia à esquerda -->
+					<div class="media"> <!-- mídia à esquerda -->
                         <div class="media-left">
                             <img class="episodio media-object" src="images/icon3.png" alt="">
                         </div>
@@ -61,8 +45,7 @@ include "header.php";
                             <p class="sobre">Os Trabalhos como Diagramador, começaram na Editora Advertencia Final, Livros e Revistas, foi quando adquiri muito conhecimento nesta area, trabalhando inclusive para algumas empresas exclusivamente para esta finalidade</p>
                         </div>
                     </div>
-
-                    <div class="media"> <!-- mídia à esquerda -->
+					<div class="media"> <!-- mídia à esquerda -->
                         <div class="media-left">
                             <img class="episodio media-object" src="images/icon4.png" alt="">
                         </div>
@@ -72,52 +55,46 @@ include "header.php";
                         </div>
                     </div>
                 </div>
-            
             </div>
         </div>
     </section>
-
+    <!--HABILIDADES-->
     <section id="habilidades">
         <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Minhas Habilidades</h1>
-            </div>
+        	<div class="row">
+	            <div class="col-md-12">
+	                <h1>Minhas Habilidades</h1>
+	            </div>
                 <div class="col-md-4">
                     <h5> Adobe Phothoshop</h5>
                     <div class="progress">
                         <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <h5 > Adobe Ilustrator</h5>
                     <div class="progress">
                         <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <h5> Adobe Indesign</h5>
                     <div class="progress">
                         <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <h5> Adobe Premiere</h5>
                     <div class="progress">
                         <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <h5> Html/css/js</h5>
                     <div class="progress">
                         <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
                     </div>
                 </div>
-                
                 <div class="col-md-4">
                     <h5> Corel Draw</h5>
                     <div class="progress">
@@ -126,8 +103,9 @@ include "header.php";
                 </div>   
             </div>
         </div>
-</section>
-<section id="curriculo">
+	</section>
+	<!--CURRICULO-->
+	<section id="curriculo">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
@@ -136,7 +114,7 @@ include "header.php";
             </div>
         </div>
     </section>
-
+    <!--PORTFÓLIO-->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -233,15 +211,12 @@ include "header.php";
             </div>
         </div>
     </section>
-
-
-      <!-- Contact Section -->
+	<!-- CONTATO -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1>Entre em Contato!</h1>
-                    
                 </div>
             </div>
             <div class="row">
@@ -293,11 +268,8 @@ include "header.php";
             </div>
         </div>
     </section>
-
-
-   <?php include "footer.php"; ?>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<?php include "footer.php"; ?>
+	<!-- SETA PARA SUBIR AO TOPO - Só é visivel em dispositivos xs e sm -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
         <a href="#header">
             <img class="subir" src="images/subir.png">
@@ -315,15 +287,15 @@ include "header.php";
     <script src="js/contact_me.js"></script>
     <script type="text/javascript">
         // Floating label headings for the contact form
-$(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
-});
+		$(function() {
+		    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+		        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
+		    }).on("focus", ".floating-label-form-group", function() {
+		        $(this).addClass("floating-label-form-group-with-focus");
+		    }).on("blur", ".floating-label-form-group", function() {
+		        $(this).removeClass("floating-label-form-group-with-focus");
+		    });
+		});
     </script>
   </body>
 </html>
