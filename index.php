@@ -1,5 +1,5 @@
-	<?php include "header.php";?>
-  	<header id="header">
+<?php include "header.php";?>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="text-center img-responsive"></div>
