@@ -22,6 +22,7 @@ body {
 	background-image: url("../img/header.png");
 	background-position: center;
     animation: animaheader 2s;
+    
 }
 
 @keyframes animaheader {
@@ -30,6 +31,23 @@ body {
     
 }
 
+.animaimg {
+    position: relative;
+    width: 50px;
+    top: 25px;
+    
+    animation: animaimg 4s;
+     animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+   
+}
+
+
+@keyframes animaimg {
+    0%{left: 0px;}
+    50%{left:50px;}
+    100%{left:0px;}
+}
 
 @media (max-width: 600px){
 

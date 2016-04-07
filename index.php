@@ -2,7 +2,7 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="text-center img-responsive"></div>
+                <img class="animaimg img-reponsive" src="images/icon3.png"/>
             </div>
         </div>
     </header>
