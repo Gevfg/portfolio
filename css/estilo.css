@@ -16,12 +16,20 @@ body {
     padding-left: 0;
 }
 #header {
+    position: relative;
 	margin-top:95px;
 	height: 300px;
-	
 	background-image: url("../img/header.png");
 	background-position: center;
+    animation: animaheader 2s;
 }
+
+@keyframes animaheader {
+    0%{top:-400px;opacity: 0;}
+    100%{top:0px;}
+    
+}
+
 
 @media (max-width: 600px){
 
@@ -47,18 +55,16 @@ h1 {
 /* barra de navegação */
 
 .navbar-gevf {
-  
-  background-color: #656565;
- 
-  padding: 10px;
+    background-color: #656565;
+    padding: 10px;
 }
+
 .navbar-gevf .navbar-brand {
-  color: #fff;
+    color: #fff;
     position: relative;
-  font-weight: 800;
-  font-size: 2em;
+    font-weight: 800;
+    font-size: 2em;
     animation: animabrand 1.5s;
-   
 }
 
 @keyframes animabrand {
@@ -66,7 +72,6 @@ h1 {
     80% {color:#fff;left: 0px;}
     90%{color:#8AB2D1;}
     100%{color:#fff;}
-    
 }
 
 
@@ -89,9 +94,11 @@ position: relative;
 
 
 .navbar-gevf .navbar-nav > li > a {
-  color: #fff;
+
+    color: #fff;
   font-size: 1.3em;
   text-transform: uppercase;
+    
   
 
  
