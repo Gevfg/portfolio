@@ -54,19 +54,37 @@ h1 {
 }
 .navbar-gevf .navbar-brand {
   color: #fff;
+    position: relative;
   font-weight: 800;
   font-size: 2em;
+    animation: animabrand 1.5s;
+   
 }
+
+@keyframes animabrand {
+    0% {color:#8AB2D1;  left: -200px;}
+    80% {color:#fff;left: 0px;}
+    90%{color:#8AB2D1;}
+    100%{color:#fff;}
+    
+}
+
+
+
+
 .navbar-gevf .navbar-brand:hover,
 .navbar-gevf .navbar-brand:focus {
   color: #8AB2D1;
   background-color: transparent;
-}
+   }
+
+
 
 
 .navbar-gevf .navbar-brand span.destaque {
-
+position: relative;
   color:#8AB2D1;
+
 }
 
 
