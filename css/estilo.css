@@ -36,7 +36,7 @@ body {
     width: 50px;
     top: 25px;
     
-    animation: animaimg 4s;
+    animation: animaimg 5s;
      animation-delay: 0.5s;
     animation-iteration-count: infinite;
    
@@ -44,8 +44,8 @@ body {
 
 
 @keyframes animaimg {
-    0%{left: 0px;}
-    50%{left:50px;}
+    0%{left: 0px}
+    50%{left:100px;}
     100%{left:0px;}
 }
 
