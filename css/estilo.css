@@ -31,6 +31,9 @@ body {
     
 }
 
+
+/*animação para imagem
+
 .animaimg {
     position: relative;
     width: 50px;
@@ -48,6 +51,8 @@ body {
     50%{left:100px;}
     100%{left:0px;}
 }
+
+*//
 
 @media (max-width: 600px){
 
@@ -668,31 +673,6 @@ a.over:hover {
 
 
 
-/* Modal */
-
-
-.btn-logar{
-    margin-top: 15px;
-    text-align: center;
-    
-    font-size: 15px;
-    color: #fff;
-    background-color: tre;
-
-}
-
-.btn-logar:hover,
-.btn-logar:focus,
-.btn-logar:active,
-.btn-logar.active {
-    background: #8AB2D1;
-}
-
-div.modal label {
-    color:#8AB2D1; 
-
-}
-
 
 
 /* PROJETOS */
@@ -708,6 +688,19 @@ img.projetos {
     position: relative;
  }
 
+/*página de login */
 
+.containerlogin {
+    width: 50%;
+ margin: 50px auto;
+}
+
+
+@media(max-width:768px) {
+    .containerlogin {
+    width: 80%;
+    margin: 50px auto;
+}
+}
 
 

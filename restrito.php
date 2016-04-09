@@ -3,7 +3,9 @@
 ini_set('display_errors', true);
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
+session_set_cookie_params(900);
 session_start();
+
 
 function verificaLogin(){
     if ($_SESSION['logado'] != true){
@@ -17,7 +19,9 @@ function connect(){
         echo "Não foi possível se conectar!.  ".mysqli_connect_error();
     }
     return $con;
+    mysqli_close ( $con );
 }
+
 function logar($usuario, $senha){
     $con = connect();
     $sql = "SELECT * from usuarios where usuario = '$usuario' and senha = '$senha'";
@@ -29,6 +33,8 @@ function logar($usuario, $senha){
     }else {
         return false;
     }
+    mysqli_close ( $con );
 }
+
 
 ?>

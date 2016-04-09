@@ -1,10 +1,14 @@
 <?php
 
+
+
+
+
     require_once 'restrito.php';
 
     if (count($_POST) > 0){
         $logado = logar($_POST['login'], $_POST['senha']);
-
+        
         if ($logado != true){
             $msg_erro = "Login e/ou senha incorreto(s), Tente Novamente!";
         }else {
@@ -38,8 +42,16 @@
   </head>
   <body>
   <div class="container">
-  	<div>
-      <form class="form-signin" action="login.php" method="post">
+  	<div  class="containerlogin">
+        
+            <!-- <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div> -->
+            <?php if ($msg_erro != ''): ?>
+            <div class="alert alert-danger" role="alert">
+                <strong><?php echo $msg_erro ?></strong>
+            </div>
+            <?php endif ?>
+      
+        <form class="form-signin" action="login.php" method="post">
         <h3 class="form-signin-heading">LOGAR</h3>
         <label for="usuario" class="sr-only">usuario</label>
         <input type="text" id="usuario" class="form-control" placeholder="Usuario" name="login" required autofocus>

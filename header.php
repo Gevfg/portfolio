@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -24,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2 text-left">
-                    <a class="user" href="login.php" ><i class="fa fa-user"></i ></a>
+                    <a class="user" href="login.php" ><i class="fa fa-user"></i > </a>
                 </div>
                 <div class="col-xs-10">
                     <ul class="list-inline text-right">
