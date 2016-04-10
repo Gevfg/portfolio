@@ -3,12 +3,12 @@
     require_once 'restrito.php';
 
     if (count($_POST) > 0){
-        $logado = logar($_POST['login'], $_POST['senha']);
+        $cadastro = cadastrar($_POST['login'], $_POST['senha']);
         
-        if ($logado != true){
-            $msg_erro = "Login e/ou senha incorreto(s), Tente Novamente!";
+        if ($cadastro != true){
+            $msg_erro = "Usuario já cadastrado!";
         }else {
-            header('Location: index.php');
+            header('Location: login.php');
         }
     }
 
@@ -39,31 +39,32 @@
   <body>
   <div class="container">
   	
+  
       
-      
-      <div  class="blabla">
+       <div  class="blabla">
         
-            <!-- <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div> -->
+       <!-- <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div> -->
             <?php if ($msg_erro != ''): ?>
             <div class="alert alert-danger" role="alert">
                 <strong><?php echo $msg_erro ?></strong>
             </div>
             <?php endif ?>
-      
-        <form class="form-signin" action="login.php" method="post">
-        <h3 class="form-signin-heading">LOGAR</h3>
-        <label for="usuario" class="sr-only">usuario</label>
-        <input type="text" id="usuario" class="form-control" placeholder="Usuario" name="login" required autofocus>
-        <label for="email" class="sr-only">email</label>
+           
+        <form class="form-signin" action="cadastrar.php" method="post">
+        <h3 class="form-signin-heading">CADASTRAR</h3>
+        
+    <label for="usuario" class="sr-only">usuario</label>
+        
+            <input type="text" id="usuario" class="form-control" placeholder="Usuario" name="login" required autofocus>
+        
         
         <label for="senha" class="sr-only">Senha</label>
         <input type="password" id="senha" class="form-control" placeholder="coloque" name="senha" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">MANDA BALA</button>
-        </form>
-        <a href="cadastrar.php">Cadastrar</a>
+      </form>
+           <a href="login.php">Logar</a>
       </div> 
-      
-      
+    
       
       
       

@@ -1,5 +1,7 @@
 <?php
 include "header.php";
+require_once "restrito.php";
+verificaLogin();
 ?>
     
     <header id="header" class="header-projeto">

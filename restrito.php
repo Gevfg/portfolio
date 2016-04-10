@@ -8,10 +8,14 @@ session_start();
 
 
 function verificaLogin(){
+    
     if ($_SESSION['logado'] != true){
         header('Location: login.php');
     }
 }
+
+
+
 function connect(){
     $con = mysqli_connect("localhost", "root", "", "portfolio");
     mysqli_set_charset($con, 'utf8');
@@ -34,6 +38,25 @@ function logar($usuario, $senha){
         return false;
     }
     mysqli_close ( $con );
+}
+
+
+
+function cadastrar($usuario, $senha){
+    $con = connect();
+    $sql = "SELECT * from usuarios where usuario = '$usuario'";
+    $query = mysqli_query($con, $sql);
+    
+    $tem = mysqli_fetch_array($query, MYSQLI_ASSOC);
+    
+    if (count($tem) > 0){
+        return false;
+    }
+
+    
+    $sql = "INSERT INTO usuarios ( usuario , senha ) VALUES ( '$usuario' , '$senha' )";
+    $query = mysqli_query($con, $sql);
+    return true;
 }
 
 
