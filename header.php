@@ -1,5 +1,10 @@
+<?php
+require_once "restrito.php";
 
+encerrar($_GET["act"]); // se receber o comando via get para encerrar sessão;
+verificaLogin(); //verifica se está logado em uma session
 
+?>
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -25,10 +30,10 @@
     <div class="login">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-left">
+                <div class="col-xs-6 text-left">
                     <a class="user" href="usuario.php" ><i class="fa fa-user"></i ><?php echo " ".ucfirst($_SESSION['name'])?> </a>
                 </div>
-                <div class="col-xs-8">
+                <div class="col-xs-6">
                     <ul class="list-inline text-right">
                             <li>
                                 <a class="social" href="https://www.facebook.com/geverson.gislon" target="_blank"><i class="fa fa-facebook"></i></a>
