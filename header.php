@@ -25,10 +25,10 @@
     <div class="login">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 text-left">
-                    <a class="user" href="login.php" ><i class="fa fa-user"></i > </a>
+                <div class="col-xs-4 text-left">
+                    <a class="user" href="usuario.php" ><i class="fa fa-user"></i ><?php echo " ".ucfirst($_SESSION['name'])?> </a>
                 </div>
-                <div class="col-xs-10">
+                <div class="col-xs-8">
                     <ul class="list-inline text-right">
                             <li>
                                 <a class="social" href="https://www.facebook.com/geverson.gislon" target="_blank"><i class="fa fa-facebook"></i></a>

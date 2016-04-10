@@ -3,7 +3,7 @@
 ini_set('display_errors', true);
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-session_set_cookie_params(900);
+session_set_cookie_params(1900);
 session_start();
 
 
@@ -37,26 +37,37 @@ function logar($usuario, $senha){
     }else {
         return false;
     }
-    mysqli_close ( $con );
+    
 }
-
-
 
 function cadastrar($usuario, $senha){
     $con = connect();
     $sql = "SELECT * from usuarios where usuario = '$usuario'";
     $query = mysqli_query($con, $sql);
-    
-    $tem = mysqli_fetch_array($query, MYSQLI_ASSOC);
-    
-    if (count($tem) > 0){
+    $consulta= mysqli_fetch_array($query, MYSQLI_ASSOC);
+    if (count($consulta) > 0){
         return false;
     }
-
-    
     $sql = "INSERT INTO usuarios ( usuario , senha ) VALUES ( '$usuario' , '$senha' )";
     $query = mysqli_query($con, $sql);
     return true;
+}
+
+function update($usuario, $senha){
+    $con = connect();
+    $sql = "UPDATE `usuarios` SET `senha`='$senha' WHERE '$usuario' = usuario";
+    $query = mysqli_query($con, $sql);
+    return true;
+}
+
+
+
+function encerrar($act){
+    if($act == "logout"){
+        session_destroy();
+        header ("location: login.php");
+    }
+
 }
 
 

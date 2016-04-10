@@ -688,27 +688,74 @@ img.projetos {
     position: relative;
  }
 
+
+
 /*página de login */
 
+
+
+
 .containerlogin {
-    width: 50%;
- margin: 50px auto;
-}
-
-
-@media(max-width:768px) {
-    .containerlogin {
-    width: 80%;
-    margin: 50px auto;
-}
-}
-
-
-.blabla{
-    width: 60%;
+    
     margin: 10px auto;
-    
-    
+    max-width: 400px;
+    animation: animacontainerlogin 0.5s;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
 }
 
 
+@keyframes animacontainerlogin {
+    0%{top: -200px;}
+    100%{top: 0;}
+}
+
+.form-signin-heading {
+    color: #8AB2D1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+
+a.linklogin {
+    margin: 5px 0;
+float: right;
+}
+
+.linklogin:hover {
+    text-decoration: none;
+    
+}
+
+input.form {
+    height: 50px;
+    border-radius: 0px;
+    
+}
+
+body.fundo {
+ background-image: url(../images/fundo.jpg);
+}
+
+
+.btn-voltar {
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    width: 25%;
+    color: #585858;
+    background-color: silver;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+   }
+
+.btn-voltar:hover {
+    color: #fff;
+   text-decoration: none;
+    background-color: #90C1AE;
+  }

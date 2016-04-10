@@ -6,7 +6,7 @@
         $cadastro = cadastrar($_POST['login'], $_POST['senha']);
         
         if ($cadastro != true){
-            $msg_erro = "Usuario já cadastrado!";
+            $msg_erro = " Usuario '".$_POST['login']. "' já cadastrado!";
         }else {
             header('Location: login.php');
         }
@@ -36,47 +36,27 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-  <div class="container">
-  	
-  
-      
-       <div  class="blabla">
-        
-       <!-- <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div> -->
+  <body class="fundo">
+      <div class="container">
+        <div  class="containerlogin">
             <?php if ($msg_erro != ''): ?>
-            <div class="alert alert-danger" role="alert">
-                <strong><?php echo $msg_erro ?></strong>
-            </div>
+                <div class="alert alert-danger" role="alert">
+                    <strong><?php echo $msg_erro ?></strong>
+                </div>
             <?php endif ?>
-           
-        <form class="form-signin" action="cadastrar.php" method="post">
-        <h3 class="form-signin-heading">CADASTRAR</h3>
-        
-    <label for="usuario" class="sr-only">usuario</label>
-        
-            <input type="text" id="usuario" class="form-control" placeholder="Usuario" name="login" required autofocus>
-        
-        
-        <label for="senha" class="sr-only">Senha</label>
-        <input type="password" id="senha" class="form-control" placeholder="coloque" name="senha" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">MANDA BALA</button>
-      </form>
-           <a href="login.php">Logar</a>
-      </div> 
-    
-      
-      
-      
-      
- </div> <!-- /container -->
-
-
-
-
-
-  	<script src="js/bootstrap.min.js"></script>
+            <form class="form-signin" action="cadastrar.php" method="post">
+            <h3 class="form-signin-heading">CADASTRAR</h3>
+            <label for="usuario" class="sr-only">usuario</label>
+            <input type="text" id="usuario" class="form-control form" placeholder="Usuario" name="login" required autofocus>
+            <label for="senha" class="sr-only">Senha</label>
+            <input type="password" id="senha" class="form-control form" placeholder="Senha" name="senha" required>
+            <button class="btn" type="submit">Vai!</button>
+            <a class="linklogin" href="login.php">Deseja Logar?</a>
+            </form>
+        </div> 
+      </div> <!-- /container -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-  </body>
+</body>
