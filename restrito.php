@@ -19,9 +19,13 @@ function verificaLogin(){
 function connect(){
     $con = mysqli_connect("localhost", "root", "", "portfolio");
     mysqli_set_charset($con, 'utf8');
+    
     if(!$con){
+        
         echo "Não foi possível se conectar!.  ".mysqli_connect_error();
+    
     }
+    
     return $con;
     mysqli_close ( $con );
 }
