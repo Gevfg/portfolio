@@ -50,20 +50,12 @@ if (count($_POST) > 0){
             </div>
             <?php endif ?>
           
-        <a href="usuarioimg.php"><img class="perfil" src="<?php echo $_SESSION['img']; ?>" ></a>
-        <form class="form-signin" action="usuario.php" method="post" >
-        <h3 class="form-signin-heading text-center"><?php echo $_SESSION['name']; ?></h3>
-        <p>Atualizar Sua Senha:</p>
-           
-        <label for="usuario" class="sr-only">usuario</label>
-        <input style=" display:none;" type="text" id="usuario" class="form-control form" placeholder="Usuario" value="<?php echo $_SESSION['name']  ?>" name="login" required >
-        <label for="senha" class="sr-only">Senha</label>
-        <input type="password" id="senha" class="form-control form" placeholder="Senha" name="senha" required autofocus>
-            
-            
-            <button class="btn btn-login" type="submit">Vai!</button>
-            <a class="linklogin" href="index.php?act=logout">Logout</a>
-        </form>
+          <a href="usuarioimg.php"><img class="perfil-big" src="<?php echo $_SESSION['img']; ?>" ></a>
+        
+        <form method="post" enctype="multipart/form-data" action="img.php">
+            <input name="arquivo" type="file" />
+            <input class="btn btn-login" type="submit" value="Salvar" />
+          </form>
           
           <a class="btn-voltar" href="index.php">voltar</a>
           

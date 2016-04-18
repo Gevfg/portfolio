@@ -759,3 +759,32 @@ body.fundo {
    text-decoration: none;
     background-color: #90C1AE;
   }
+
+
+
+
+/*usuario*/
+
+
+img.perfil {
+    display: block;
+    margin: 0 auto;
+    width:  100px;
+    height:  100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+img.perfil-big {
+    display: block;
+    margin: 0 auto;
+    width:  200px;
+    height:  200px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    border: none;
+    font-size: 10px;
+    text-decoration: none;

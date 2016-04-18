@@ -15,6 +15,13 @@ function verificaLogin(){
 }
 
 
+function verificaimg(){
+    if ($_SESSION['img'] == null){
+        $_SESSION['img'] = "images/user/profile.png";
+        return 0;
+    }
+}
+
 
 function connect(){
     $con = mysqli_connect("localhost", "root", "", "portfolio");
