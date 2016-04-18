@@ -60,9 +60,8 @@
         <input type="password" id="senha" class="form-control form" placeholder="Senha" name="senha" required>
             <button class="btn btn-login" type="submit">Vai!</button>
             <a class="linklogin" href="cadastrar.php">Deseja cadastrar?</a>
-            
-        </form>
-        
+            </form>
+        <a class="btn-voltar" href="index.php">voltar</a>
       </div> 
       
       

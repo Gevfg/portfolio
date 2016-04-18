@@ -53,6 +53,7 @@
             <button class="btn" type="submit">Vai!</button>
             <a class="linklogin" href="login.php">Deseja Logar?</a>
             </form>
+             <a class="btn-voltar" href="index.php">voltar</a>
         </div> 
       </div> <!-- /container -->
     <script src="js/bootstrap.min.js"></script>

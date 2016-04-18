@@ -2,7 +2,10 @@
 require_once "restrito.php";
 
 encerrar($_GET["act"]); // se receber o comando via get para encerrar sessão;
-verificaLogin(); //verifica se está logado em uma session
+//verificaLogin(); //verifica se está logado em uma session
+ if ($_SESSION['name'] == ""){
+     $_SESSION['name'] = 'Logar';
+ }
 
 ?>
 <!DOCTYPE html>

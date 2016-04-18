@@ -69,7 +69,7 @@ function update($usuario, $senha){
 function encerrar($act){
     if($act == "logout"){
         session_destroy();
-        header ("location: login.php");
+        header ("location: index.php");
     }
 
 }
