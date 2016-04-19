@@ -49,8 +49,10 @@ if (count($_POST) > 0){
                 <strong><?php echo $msg_erro ?></strong>
             </div>
             <?php endif ?>
-          
+       
         <a href="usuarioimg.php"><img class="perfil" src="<?php echo $_SESSION['img']; ?>" ></a>
+            
+
         <form class="form-signin" action="usuario.php" method="post" >
         <h3 class="form-signin-heading text-center"><?php echo $_SESSION['name']; ?></h3>
         <p>Atualizar Sua Senha:</p>
