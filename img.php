@@ -12,7 +12,7 @@ $arquivo_tmp = $_FILES['arquivo']['tmp_name'];
  
 
  if (array_search($arqType, $tiposPermitidos) === false) {
-    $_SESSION['msg'] ='error';
+    $_SESSION['msg'] = true;
      header("Location:usuarioimg.php");
  }else{
 
@@ -25,8 +25,10 @@ $pasta = 'images/user/';
       $nome = time() . '.' . $extensao;
       $upload = move_uploaded_file($arquivo_tmp, $pasta . $nome);
 
-
-$_SESSION['img'] = $pasta.$nome; // salva na sessão o caminho da imagem
+$caminhoimg = $pasta.$nome;
+salvarimg($caminhoimg,$_SESSION['name']);
+carregaimg($usuario);
+//$_SESSION['img'] = $pasta.$nome; // salva na sessão o caminho da imagem
 
 header("Location:usuario.php");
  }

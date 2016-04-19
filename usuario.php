@@ -1,7 +1,8 @@
 <?php
 require_once "restrito.php";
 verificaLogin();
-verificaimg();
+$carregar = carregaimg($_SESSION['name']);
+
 
 if (count($_POST) > 0){
         $logado = update($_POST['login'], $_POST['senha']);
@@ -13,6 +14,7 @@ if (count($_POST) > 0){
             $msg_erro = "Alteração Realizada com sucesso";
         }
     }
+
 
 ?>
 

@@ -14,13 +14,32 @@ function verificaLogin(){
     }
 }
 
-
-function verificaimg(){
-    if ($_SESSION['img'] == null){
+function carregaimg($usuario){
+   $con = connect(); 
+    $sql = "SELECT * from usuarios where usuario = '$usuario'";
+    $query = mysqli_query($con, $sql);
+    $consulta= mysqli_fetch_array($query, MYSQLI_ASSOC);
+    if ($consulta['img'] == null) {
         $_SESSION['img'] = "images/user/profile.png";
-        return 0;
+        return false;
+    }else{
+        $_SESSION['img'] = $consulta['img'];
+        return true;
     }
 }
+
+
+
+
+
+
+function salvarimg($caminho,$usuario){
+    $con = connect();
+    $sql = "UPDATE `usuarios` SET `img`='$caminho' WHERE '$usuario' = usuario";
+    $query = mysqli_query($con, $sql);
+    return true;
+}
+
 
 
 function connect(){

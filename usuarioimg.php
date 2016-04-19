@@ -1,18 +1,13 @@
 <?php
 require_once "restrito.php";
 verificaLogin();
-verificaimg();
 
-if (count($_POST) > 0){
-        $logado = update($_POST['login'], $_POST['senha']);
-        
-        if ($logado != true){
-            
-        }else {
-            $_SESSION['name'] = $_POST['login'];
-            $msg_erro = "Alteração Realizada com sucesso";
-        }
-    }
+
+
+
+if ($_SESSION['msg'] == true){
+    $msg_erro = "Formato não suportado"; 
+}
 
 ?>
 
@@ -45,19 +40,19 @@ if (count($_POST) > 0){
         
            <!-- <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div> -->
             <?php if ($msg_erro != ''): ?>
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-danger" role="alert">
                 <strong><?php echo $msg_erro ?></strong>
             </div>
             <?php endif ?>
           
-          <a href="usuarioimg.php"><img class="perfil-big" src="<?php echo $_SESSION['img']; ?>" ></a>
+          <img class="perfil-big" src="<?php echo $_SESSION['img']; ?>" >
         
         <form method="post" enctype="multipart/form-data" action="img.php">
             <input name="arquivo" type="file" />
             <input class="btn btn-login" type="submit" value="Salvar" />
           </form>
           
-          <a class="btn-voltar" href="index.php">voltar</a>
+          <a class="btn-voltar" href="usuario.php">voltar</a>
           
       </div> 
       
