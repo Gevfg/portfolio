@@ -2,10 +2,7 @@
 require_once "restrito.php";
 verificaLogin();
 
-
-
-
-if ($_SESSION['msg'] == true){
+if ($_SESSION['msgerror'] == true){
     $msg_erro = "Formato não suportado"; 
 }
 

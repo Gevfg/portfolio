@@ -1,6 +1,5 @@
 <?php 
 require_once "header.php";
-
 ?>
     <header id="header">
         <div class="container">
@@ -273,7 +272,8 @@ require_once "header.php";
         </div>
     </section>
 	<?php include "footer.php"; ?>
-	<!-- SETA PARA SUBIR AO TOPO - Só é visivel em dispositivos xs e sm -->
+	
+    <!-- SETA PARA SUBIR AO TOPO - Só é visivel em dispositivos xs e sm -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
         <a href="#header">
             <img class="subir" src="images/subir.png">
@@ -283,7 +283,6 @@ require_once "header.php";
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jquery.mixitup.js" type="text/javascript"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Contact Form JavaScript -->
