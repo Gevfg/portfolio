@@ -769,10 +769,11 @@ body.fundo {
 img.perfil {
     display: block;
     margin: 0 auto;
-    width:  100px;
-    height:  100px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     margin-bottom: 5px;
+   
 }
 
 img.perfil-big {
