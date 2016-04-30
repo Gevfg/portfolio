@@ -1,6 +1,7 @@
 <?php
 require_once "restrito.php";
 encerrar($_GET["act"]); // se receber o comando via get para encerrar sessão;
+$carregar = carregaimg($_SESSION['name']); //Carrega a imagem da sessão
 if ($_SESSION['name'] == ""){
     $_SESSION['name'] = 'Logar';
 }
@@ -31,7 +32,8 @@ if ($_SESSION['name'] == ""){
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 text-left">
-                    <a class="user" href="usuario.php" ><i class="fa fa-user"></i ><?php echo " ".ucfirst($_SESSION['name'])?> </a>
+                    <img class="perfilini" src="<?php echo $_SESSION['img']; ?>" >
+                    <a class="user" href="usuario.php" ><?php echo " ".ucfirst($_SESSION['name'])?> </a>
                 </div>
                 <div class="col-xs-6">
                     <ul class="list-inline text-right">

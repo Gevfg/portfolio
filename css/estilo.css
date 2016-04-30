@@ -765,6 +765,15 @@ body.fundo {
 
 /*usuario*/
 
+img.perfilini {
+  
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
 
 img.perfil {
     display: block;
