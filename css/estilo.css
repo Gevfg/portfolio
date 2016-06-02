@@ -21,8 +21,6 @@ body {
 	height: 300px;
 	background-image: url("../img/header.png");
 	background-position: center;
-    animation: animaheader 2s;
-    
 }
 
 @keyframes animaheader {
@@ -87,7 +85,7 @@ h1 {
     position: relative;
     font-weight: 800;
     font-size: 2em;
-    animation: animabrand 1.5s;
+    
 }
 
 @keyframes animabrand {
@@ -680,8 +678,7 @@ a.over:hover {
 .header-projeto {
 	margin-top:95px;
 	height: 300px;
-	background-color:blue;
-	}
+}
 
 
 img.projetos {

@@ -4,7 +4,7 @@ require_once "restrito.php";
 //verificaLogin();
 ?>
     
-    <header id="header" class="header-projeto">
+    <header class="header-projeto">
         <div class="container-fluid">
             <div class="row">
                 <img class="projetos" src="img/portfolio/projeto1-banner.png">
