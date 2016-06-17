@@ -11,7 +11,7 @@ function top()
 echo("<p align='center'>Acesso Restrito</p>");
   return 1;
 } ?>
-
+	<!-- TESTE -->
 <?
 if (!isset($_SESSION["admin_session"]))
 {
