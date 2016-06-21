@@ -1,0 +1,163 @@
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	line-height:1.4em;
+}
+header {
+	background-color:#333;
+	color:#f1f1f1;
+	border-top:5px solid #222;
+	height:70px;
+}
+.container {
+	position: relative;
+	margin:0 auto;
+	width:90%;
+}
+
+.clear-fix {
+	clear:both;
+}
+/* NAVEGAÇÂO */
+
+nav {
+	position:absolute;
+	right:0;
+	top:-5px;
+}
+li {
+	display:inline-block;
+	padding:10px;	
+	float:left;
+	border-top:5px solid transparent;
+}
+li:hover {
+	padding:10px;
+	display:inline-block;
+	border-top:5px solid #cecece;
+}
+li.amarelo:hover {
+	border-top:5px solid yellow;
+}
+li.azul:hover {
+	border-top:5px solid blue;
+}
+li.vermelho:hover {
+	border-top:5px solid red;
+}
+li a {
+	font-size:1em;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-decoration: none;
+	color:#f1f1f1;
+}
+.logo {
+	font-size:3em;
+	font-weight:bold;
+	line-height:60px;
+}
+.copyright-logo {
+	font-size:0.4em;
+	position:relative;
+	top:-20px;
+}
+
+/*SOBRE A HISTÓRIA*/
+
+.primeiro-artigo{
+	margin-bottom:20px;
+}
+
+h2 {
+	font-size:1.5em;
+	margin-top:20px;
+	margin-bottom: 10px;
+}
+
+article h2 {
+	background-color: #333;
+	color: #f1f1f1;
+	text-transform:uppercase;
+	padding:20px;
+	font-weight: bold;
+	clear:both;
+}
+
+article h3 {
+	text-align:center;
+	font-size:1.3em;
+	font-weight: bold;
+	color:#333;
+	margin: 20px;
+	text-transform:uppercase;
+}
+
+.coluna1 p, .coluna2 p{
+	text-align: justify;
+	color:#555;
+}
+
+.coluna1, .coluna2 {
+	box-sizing:border-box;
+	padding: 0 10px;
+	float:left;
+	width:50%;
+}
+
+@media screen and (max-width: 768px) {
+	.coluna1, .coluna2 {
+	box-sizing:border-box;
+	padding-right:10px;
+	float:left;
+	width:100%;
+	}
+	.container {
+	width:100%;
+	}
+	.logo {
+	margin-left:20px;
+	}
+}
+
+main {
+	padding-bottom:50px;
+}
+
+footer {
+	text-align:center;
+	background-color:#333;
+	padding:20px;
+	display:block;
+	margin:0 auto;
+	box-sizing:border-box;
+	color:#f1f1f1;
+}
+
+footer a {
+	text-decoration: none;
+	color:#f1f1f1;
+}
+footer a:hover {
+	color:#99ffff;
+}
+footer a:active {
+	color:orange;
+}
+footer a:visited {
+	color:#889988;
+}
+
+
+
+h2.azul {
+	border-top:5px solid blue;
+}
+h2.amarelo {
+	border-top:5px solid yellow;
+}
+h2.vermelho {
+	border-top:5px solid red;
+}	
