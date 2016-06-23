@@ -120,6 +120,9 @@ article h3 {
 	.logo {
 	margin-left:20px;
 	}
+    #contact {
+    width: 100%;
+    }
 }
 
 main {
@@ -161,3 +164,83 @@ h2.amarelo {
 h2.vermelho {
 	border-top:5px solid red;
 }	
+
+/*********** CONTATO FORMULÀRIO *****************/
+
+#contact {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+   #contact {
+        width: 100%;
+    } 
+}
+
+#contact h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+form, fieldset, input, textarea {
+    margin: 0; padding: 0; border: 0; outline: 0;
+}
+
+label {
+    display: block;
+    margin: 20px 0px 10px;
+    color: #888;
+}
+input, textarea {
+    font-size: 1.3em;
+    padding: 10px;
+    border: 0;
+    border-bottom:2px solid #ccc;
+    width: 100%;
+}
+ 
+input {
+    margin-bottom: 20px;
+    height: 40px;
+}
+input::-webkit-input-placeholder  {
+        color: #bbb;
+    font-family: "Open Sans";
+    font-size: 1em;
+    }
+
+textarea{
+    height: 100px;
+}
+    textarea::-webkit-input-placeholder  {
+        color: #bbb; font-size: 1em;
+        font-family: "Open Sans";
+    }
+
+input[type=submit] {
+    width: 120px;
+    height: 50px;
+}
+
+.btn-enviar {
+    color: #333;
+    font-family: "Open sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    background-color: #bbb;
+    border-bottom: 2px solid #999;
+}
+
+
+.btn-enviar:hover {
+    color: #444;
+    background-color: #ccc;
+    border-bottom: 2px solid green;
+}
+
+input:focus, textarea:focus {
+    border-bottom:2px solid green;
+}
