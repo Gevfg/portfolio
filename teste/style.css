@@ -10,6 +10,7 @@ header {
 	color:#f1f1f1;
 	border-top:5px solid #222;
 	height:70px;
+	
 }
 .container {
 	position: relative;
@@ -32,14 +33,12 @@ li {
 	padding:10px;	
 	float:left;
 	border-top:5px solid transparent;
+    transition: 1s;
 }
-li:hover {
-	padding:10px;
-	display:inline-block;
-	border-top:5px solid #cecece;
-}
+
 li.amarelo:hover {
 	border-top:5px solid yellow;
+    transition: 1s;
 }
 li.azul:hover {
 	border-top:5px solid blue;
@@ -54,6 +53,7 @@ li a {
 	text-decoration: none;
 	color:#f1f1f1;
 }
+
 .logo {
 	font-size:3em;
 	font-weight:bold;
